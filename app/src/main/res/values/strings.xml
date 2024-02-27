@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name" translatable="false">CubingHub</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="analysis_content_description">Analysis</string>
+    <string name="acc_content_description">Account</string>
+    <string name="account_management_title">Account management</string>
+    <string name="logged_in_as">You are currently logged in as:</string>
+    <string name="logout">Logout</string>
+    <string name="change_password">Change password</string>
+    <string name="delete_account">Delete account</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="external_website_warning">Clicking on this link will lead you to an external website. CubingHub is not responsible for the content of external websites.</string>
+    <string name="go_back">Go back</string>
+    <string name="proceed">Proceed</string>
+    <string name="privacy_policy_link" translatable="false">https://lapis-poppy3487.vm-host.com/chpp.html</string>
+    <string name="terms_of_service_link" translatable="false">https://lapis-poppy3487.vm-host.com/chtos.html</string>
+    <string name="not_logged_in">You are currently not logged in</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="home">Home</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="reset_password">Reset password</string>
+    <string name="close">Close</string>
+    <string name="invalid_creds">Invalid email or password. Try again.</string>
+    <string name="authenticated">You have logged in successfully.</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="creds_not_specified">Not all credentials were specified.</string>
+    <string name="account_already_exists">An account with this address already exists.</string>
+    <string name="success">Successful</string>
+    <string name="registered">You have successfully been registered. Please proceed to login now.</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="confirm_privacy_policy">By checking this checkbox, you agree to the Terms of Service and the Privacy Policy of CubingHub.</string>
+    <string name="please_confirm">You need to agree with the Terms of Service and the Privacy Policy of CubingHub to register an account.</string>
+    <string name="passwords_mismatch">The passwords do not match.</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="repeat_new_password">Repeat new password</string>
+    <string name="end_sessions_checkbox">End all sessions</string>
+    <string name="invalid_password">Invalid password. Try again.</string>
+    <string name="password_changed">Your password has been changed.</string>
+    <string name="no_connection">You aren\'t connected to the Internet.</string>
+    <string name="deletion_consequences">This action will delete all your ratings and log you out of the account.</string>
+    <string name="deletion_consent">I understand, delete my account</string>
+    <string name="server_error">Something went wrong on the server. Try again.</string>
+    <string name="deleted">You have successfully deleted your account.</string>
+    <string name="delete_my_account">Delete my account</string>
+    <string name="not_registered_yet">Not registered? Click to create an account</string>
+    <string name="support_mail" translatable="false">scubinghub@gmail.com</string>
+    <string name="restore_password_subject" translatable="false">Password restoration</string>
+    <string name="restore_password_text" translatable="false">This email has been sent from CubingHub.\nI am requesting a password reset for this email\'s account.\nI am waiting for a new password to be sent back.\nThank you</string>
+    <string name="restoration_info">Please note that the password restoration process is manual. The administrator will see your email and send you back your new password, which you\'ll then be able to use for logging into your account. For now please browse the algorithms without an account.</string>
+    <string name="author_year">RoughlyUnderscore, 2024</string>
+    <string name="credits_introductory">Credits (clickable):</string>
+    <string name="akatab_credit">Font Akatab by SIL International available at https://fonts.google.com/specimen/Akatab licensed under OFL 1.1</string>
+    <string name="akatab_link" translatable="false">https://fonts.google.com/specimen/Akatab</string>
+    <string name="gson_credit">Gson by Google available at https://github.com/google/gson licensed under Apache-2.0</string>
+    <string name="gson_link" translatable="false">https://github.com/google/gson</string>
+    <string name="apache_io_credit">Apache Commons IO by Apache available at https://github.com/apache/commons-io licensed under Apache-2.0</string>
+    <string name="apache_io_link" translatable="false">https://github.com/apache/commons-io</string>
+    <string name="coil_credit">Coil available at https://github.com/coil-kt/coil licensed under Apache-2.0</string>
+    <string name="coil_link" translatable="false">https://github.com/coil-kt/coil</string>
+    <string name="retrofit_credit">Retrofit by Square available at https://github.com/square/retrofit licensed under Apache-2.0</string>
+    <string name="retrofit_link" translatable="false">https://github.com/square/retrofit</string>
+    <string name="dagger_hilt_credit">Dagger Hilt by Google available at https://github.com/google/dagger licensed under Apache-2.0</string>
+    <string name="dagger_hilt_link" translatable="false">https://github.com/google/dagger</string>
+    <string name="apis_credit">Android-related APIs like Jetpack Compose by Google at https://developer.android.com/guide</string>
+    <string name="apis_link" translatable="false">https://developer.android.com/guide</string>
+    <string name="google_icons_credit">Google Icons licensed under Apache-2.0</string>
+    <string name="source_code">Source code</string>
+    <string name="source_code_link" translatable="false">https://github.com/RoughlyUnderscore/CubingHub</string>
+    <string name="backend_source_code">Backend source code</string>
+    <string name="backend_source_code_link" translatable="false">https://github.com/RoughlyUnderscore/CubingHubBackend</string>
+    <string name="please_wait_for_algs">Please wait for the algorithms to load. This may take a while.</string>
+    <string name="error">An error occurred</string>
+    <string name="speedcubedb_inspiration">CubingHub is HEAVILY inspired by SpeedcubeDB and is meant to be a light mobile alternative for it - please check it out</string>
+    <string name="speedcubedb_link" translatable="false">https://speedcubedb.com</string>
+    <string name="like">Like</string>
+    <string name="dislike">Dislike</string>
+    <string name="invalid_email_or_unsafe_password">Invalid email or unsafe password. Verify that your password meets the following criteria:\n- 1 capital letter\n- 1 small letter\n- 1 number\n- 1 symbol\n- At least 8 characters</string>
+    <string name="please_select_file">Please select a Twisty Timer or csTimer export file to analyze.</string>
+    <string name="export_analyzer">Export Analyzer</string>
+    <string name="review_your_analysis">Please review the analysis of your export below, or click to choose another file.</string>
+    <string name="total_solves">Total solves:</string>
+    <string name="solve_statistics">Solve statistics</string>
+    <string name="mean_average" translatable="false">Mean/average:</string>
+    <string name="ok">OK</string>
+    <string name="plus_two" translatable="false">+2</string>
+    <string name="dnf" translatable="false">DNF</string>
+    <string name="from_0600_to_1159" translatable="false">06:00-11:59</string>
+    <string name="from_1200_to_1759" translatable="false">12:00-17:59</string>
+    <string name="from_1800_to_2359" translatable="false">18:00-23:59</string>
+    <string name="from_0000_to_0559" translatable="false">00:00-05:59</string>
+    <string name="daytime_distribution">Daytime distribution</string>
+    <string name="best_solve">Best solve:</string>
+    <string name="worst_solve">Worst solve:</string>
+    <string name="best_scramble">Best solve scramble:</string>
+    <string name="worst_scramble">Worst solve scramble:</string>
+    <string name="best_mo3">Best mo3:</string>
+    <string name="best_ao5">Best ao5:</string>
+    <string name="best_solves_daytime">Best solves (daytime)</string>
+    <string name="best_mo3_data">Best mo3 data:</string>
+    <string name="best_ao5_data">Best ao5 data:</string>
+    <string name="best_ao12_data">Best ao12 data:</string>
+    <string name="best_ao50_data">Best ao50 data:</string>
+    <string name="best_ao100_data">Best ao100 data:</string>
+    <string name="best_ao5_daytime">Best ao5 (daytime)</string>
+    <string name="best_ao12">Best ao12:</string>
+    <string name="best_ao50">Best ao50:</string>
+    <string name="best_ao100">Best ao100:</string>
+    <string name="days_since_first_solve">Days since first solve:</string>
+    <string name="best_ao12_daytime">Best ao12 (daytime):</string>
+    <string name="best_mo3_daytime">Best mo3 (daytime):</string>
+    <string name="random_scramble_from_export">Random scramble from export:</string>
+    <string name="best_ao50_daytime">Best ao50 (daytime):</string>
+    <string name="best_ao100_daytime">Best ao100 (daytime):</string>
+    <string name="total_time">Total time spent cubing:</string>
+    <string name="days_unit">d</string>
+    <string name="hours_unit">hr</string>
+    <string name="you_are_at_least_sub">You are at least sub...</string>
+    <string name="algorithm_images">Most images for algorithms have been created with cubing.net</string>
+    <string name="cubing_net_link" translatable="false">https://alg.cubing.net</string>
+    <string name="cubingapp_link" translatable="false">https://cubingapp.com/</string>
+    <string name="are_you_sub_x_credit">\"Are you sub X\" - both the idea and the algorithm have been taken from CubingApp</string>
+    <string name="when_new_subsets">New subsets are always coming! You do not need to update the app to get them - they\'ll appear on your device automatically after they appear in the database. Any suggestions and submissions can be sent to scubinghub@gmail.com (clickable).</string>
+    <string name="algs_speedcubedb">Most algorithms are taken with permission from SpeedcubeDB</string>
+</resources>
