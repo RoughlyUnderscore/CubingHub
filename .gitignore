@@ -8,6 +8,8 @@ app/libs/
 app/release/
 screens/
 
+app/src/main/assets/examples/
+
 # Local configuration file (sdk path, etc)
 local.properties
 
