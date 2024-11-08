@@ -13,8 +13,8 @@
     <string name="external_website_warning">Clicking on this link will lead you to an external website. CubingHub is not responsible for the content of external websites.</string>
     <string name="go_back">Go back</string>
     <string name="proceed">Proceed</string>
-    <string name="privacy_policy_link" translatable="false">https://lapis-poppy3487.vm-host.com/chpp.html</string>
-    <string name="terms_of_service_link" translatable="false">https://lapis-poppy3487.vm-host.com/chtos.html</string>
+    <string name="privacy_policy_link" translatable="false">https://ch.runderscore.com/chpp.html</string>
+    <string name="terms_of_service_link" translatable="false">https://ch.runderscore.com/chtos.html</string>
     <string name="not_logged_in">You are currently not logged in</string>
     <string name="login">Login</string>
     <string name="register">Register</string>
@@ -118,7 +118,7 @@
     <string name="total_time">Total time spent cubing:</string>
     <string name="days_unit">d</string>
     <string name="hours_unit">hr</string>
-    <string name="you_are_at_least_sub">You are at least sub...</string>
+    <string name="you_are_at_least_sub">You are at least sub…</string>
     <string name="algorithm_images">Most images for algorithms have been created with cubing.net</string>
     <string name="cubing_net_link" translatable="false">https://alg.cubing.net</string>
     <string name="cubingapp_link" translatable="false">https://cubingapp.com/</string>

@@ -15,10 +15,10 @@ android {
 
     defaultConfig {
         applicationId = "com.roughlyunderscore.cubinghub"
-        minSdk = 26
+        minSdk = 29
         targetSdk = 34
-        versionCode = 4
-        versionName = "1.1"
+        versionCode = 5
+        versionName = "1.11"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {

@@ -39,32 +39,32 @@ interface BackendAPI {
   @GET("api/v1/change_password?")
   suspend fun changePassword(
     @Query(value = "token") token: String,
-    @Query(value = "oldpassword", encoded = true) oldPassword: String,
-    @Query(value = "newpassword", encoded = true) newPassword: String,
-    @Query(value = "endsessions") endSessions: Boolean,
+    @Query(value = "old_password", encoded = true) oldPassword: String,
+    @Query(value = "new_password", encoded = true) newPassword: String,
+    @Query(value = "end_sessions") endSessions: Boolean,
   ): Response<Void>
 
   @GET("api/v1/like?")
   suspend fun like(
-    @Query(value = "variationId") variationId: Int,
+    @Query(value = "variation_id") variationId: Int,
     @Query(value = "token") token: String
   ): Response<Void>
 
   @GET("api/v1/unlike?")
   suspend fun unlike(
-    @Query(value = "variationId") variationId: Int,
+    @Query(value = "variation_id") variationId: Int,
     @Query(value = "token") token: String
   ): Response<Void>
 
   @GET("api/v1/dislike?")
   suspend fun dislike(
-    @Query(value = "variationId") variationId: Int,
+    @Query(value = "variation_id") variationId: Int,
     @Query(value = "token") token: String
   ): Response<Void>
 
   @GET("api/v1/undislike?")
   suspend fun undislike(
-    @Query(value = "variationId") variationId: Int,
+    @Query(value = "variation_id") variationId: Int,
     @Query(value = "token") token: String
   ): Response<Void>
 

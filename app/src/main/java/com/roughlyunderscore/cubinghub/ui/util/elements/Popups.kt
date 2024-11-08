@@ -690,7 +690,7 @@ fun AlgorithmPopup(
   onUndoLike: suspend (Int) -> Boolean,
   onUndoDislike: suspend (Int) -> Boolean
 ) {
-  val name = algorithm.exhibit ?: "?"
+  val name = algorithm.name ?: "?"
   val sortedVariations = algorithm.sortedVariations
 
   val viewModel = modelStorage.appViewModel

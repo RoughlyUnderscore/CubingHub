@@ -9,17 +9,13 @@ class Algorithm {
   @Expose
   var id: Int? = null
 
-  @SerializedName("subset")
+  @SerializedName("name")
   @Expose
-  var subset: String? = null
+  var name: String? = null
 
-  @SerializedName("exhibit")
+  @SerializedName("imageUrl")
   @Expose
-  var exhibit: String? = null
-
-  @SerializedName("exhibitImageUrl")
-  @Expose
-  var exhibitImageUrl: String? = null
+  var imageUrl: String? = null
 
   @SerializedName("imageFileName")
   @Expose
@@ -32,5 +28,5 @@ class Algorithm {
   val sortedVariations: List<Variation>
     get() = variations?.sortedBy { it.disliked?.size - it.liked?.size } ?: emptyList()
 
-  override fun toString(): String = "Algorithm(id=$id, subset=$subset, exhibit=$exhibit, exhibitImageUrl=$exhibitImageUrl, imageFileName=$imageFileName, variations=${variations?.map{ it.toString() }})"
+  override fun toString(): String = "Algorithm(id=$id, name=$name, imageUrl=$imageUrl, imageFileName=$imageFileName, variations=${variations?.map{ it.toString() }})"
 }

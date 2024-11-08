@@ -43,7 +43,7 @@ object AppModule {
   @Singleton
   fun provideApi(): BackendAPI {
     return Retrofit.Builder()
-      .baseUrl("https://lapis-poppy3487.vm-host.com")
+      .baseUrl("https://ch.runderscore.com")
       .addConverterFactory(GsonConverterFactory.create())
       .client(OkHttpClient().newBuilder()
         .retryOnConnectionFailure(true)

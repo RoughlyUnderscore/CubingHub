@@ -22,7 +22,7 @@ import java.io.FileOutputStream
 import java.net.URL
 
 object Cacher {
-  private fun createAlgorithmName(algorithm: Algorithm) = "${algorithm.subset}_${algorithm.exhibit}_${System.currentTimeMillis()}".normalize() + ".png"
+  private fun createAlgorithmName(subsetName: String, algorithm: Algorithm) = "${subsetName}_${algorithm.name}_${System.currentTimeMillis()}".normalize() + ".png"
   private fun createSubsetName(subset: Subset) = "${subset.name}_${System.currentTimeMillis()}".normalize() + ".png"
 
   private fun saveBitmap(bitmap: Bitmap, fileName: String, ctx: Context, width: Int, height: Int) = FileOutputStream(File(ctx.filesDir, fileName)).use {
@@ -49,10 +49,10 @@ object Cacher {
 
   suspend fun requestSubsetAlgorithmsLoading(subset: Subset, serverAlgs: List<Algorithm>, ctx: Context) = coroutineScope {
     val cachedAlgs = subset.algorithms
-    cacheAlgorithmsAsync(serverAlgs.toMutableList(), cachedAlgs, ctx)
+    cacheAlgorithmsAsync(subset, serverAlgs.toMutableList(), cachedAlgs, ctx)
   }
 
-  private suspend fun cacheAlgorithmsAsync(serverLoadedAlgs: MutableList<Algorithm>, cachedAlgorithms: List<Algorithm>?, ctx: Context) = coroutineScope {
+  private suspend fun cacheAlgorithmsAsync(subset: Subset, serverLoadedAlgs: MutableList<Algorithm>, cachedAlgorithms: List<Algorithm>?, ctx: Context) = coroutineScope {
     return@coroutineScope async(Dispatchers.IO) {
       val algMapping = serverLoadedAlgs.associateWith { alg ->
         cachedAlgorithms?.find { it.id == alg.id }
@@ -61,8 +61,8 @@ object Cacher {
       val result = mutableListOf<Algorithm>()
 
       algMapping.forEach { (serverAlg, cachedAlg) ->
-        if (serverAlg.exhibitImageUrl != cachedAlg?.exhibitImageUrl) {
-          val name = createAlgorithmName(serverAlg)
+        if (serverAlg.imageUrl != cachedAlg?.imageUrl) {
+          val name = createAlgorithmName(subset.name!!, serverAlg)
           saveAlgorithm(serverAlg, ctx, name)
           serverAlg.imageFileName = name
         } else {
@@ -77,7 +77,7 @@ object Cacher {
   }
 
   private suspend fun saveAlgorithm(alg: Algorithm, ctx: Context, name: String) = coroutineScope {
-    saveBitmap(fetchBitmap(alg.exhibitImageUrl) ?: return@coroutineScope, name, ctx, 62, 72)
+    saveBitmap(fetchBitmap(alg.imageUrl) ?: return@coroutineScope, name, ctx, 62, 72)
   }
 
   private suspend fun fetchBitmap(link: String?): Bitmap? = coroutineScope {
@@ -147,7 +147,7 @@ object Cacher {
       )
     } ?: run {
       AsyncImageFromLink(
-        url = algorithm.exhibitImageUrl ?: "",
+        url = algorithm.imageUrl ?: "",
         ctxHandler = ctxHandler,
         contentDescription = desc,
         contentScale = contentScale,

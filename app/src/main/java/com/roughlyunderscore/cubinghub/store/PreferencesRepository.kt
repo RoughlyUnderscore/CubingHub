@@ -16,7 +16,7 @@ class PreferencesRepository @Inject constructor(
   @ApplicationContext private val ctx: Context
 ) {
   val tokenFlow: Flow<String> = dataStore.data.map {
-      preferences -> preferences[TOKEN_PREFERENCES_KEY] ?: ""
+    preferences -> preferences[TOKEN_PREFERENCES_KEY] ?: ""
   }
 
   suspend fun editToken(token: String) = dataStore.edit { preferences -> preferences[TOKEN_PREFERENCES_KEY] = token }
